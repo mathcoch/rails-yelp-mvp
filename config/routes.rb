@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create]
   end
   get root to: 'restaurants#index'
+
+  get 'reviews/search', to: 'reviews#search', as: 'reviews_search'
 end

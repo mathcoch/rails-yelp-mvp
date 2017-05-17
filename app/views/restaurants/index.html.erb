@@ -1,4 +1,4 @@
-<h1>List of our restaurant</h1>
+<h1 class="text-center">List of our restaurant</h1>
 
 <ul>
   <% @restaurants.each do |restaurant| %>
@@ -9,5 +9,3 @@
     </li>
   <% end %>
 </ul>
-
-<%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-danger"%>

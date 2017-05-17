@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/navbar' %>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-8 col-md-offset-2">
+          <div class="content">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

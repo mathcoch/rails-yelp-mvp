@@ -6,3 +6,9 @@
   <li><%= @restaurant.phone_number %></li>
   <li><%= @restaurant.category %></li>
 </ul>
+
+<ul>Reviews:
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>
+  <% end %>
+</ul>
